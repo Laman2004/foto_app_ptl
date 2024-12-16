@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+minimum-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>{% block title %}{% endblock %} </title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .features {
+        background-color: #fff;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        width: 70%;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .features h1 {
+        font-size: 36px;
+        color: #333;
+    }
+
+    .features p {
+        font-size: 18px;
+        color: #666;
+    }
+
+    .features a {
+        text-decoration: none;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .features a:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+ <header>
+        <!-- Naviqasiya menyusu buraya əlavə edilir -->
+        <nav>
+            <ul>
+                <li><a href="/">Əsas Səhifə</a></li>
+                <li><a href="/about">Haqqında</a></li>
+                <li><a href="/contact">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+ <button type="button" class="btn btn-primary">Primary</button>
+{% block content%}
+{% endblock %}
+</body>
+</html>

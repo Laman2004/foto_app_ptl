@@ -1,0 +1,27 @@
+{% extends 'foto_app/layout.html'%}
+{% block titul%}"Əsas səhifə"{% endblock%}
+
+{% block content%}
+      <div class="features">
+      <h1>Yolda Fotoqraf</h1>
+      <p>Yolda Fotoqraf komandasının bir üzvü olmaq istəyirsənsə düzgün ünvandasan :)</p>
+
+      </div>
+      <div class="contact-section">
+    <h2>Əlaqə</h2>
+    <p>Əgər komandaya qoşulmaq istəyirsinizsə, aşağıdakı formu doldurun:</p>
+    <form action="/submit-form" method="POST">
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Göndər</button>
+    </form>
+</div>
+
+{% endblock%}

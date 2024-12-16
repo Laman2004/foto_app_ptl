@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fotoqalereya</title>
+</head>
+<body>
+    <h1>Şəkillər</h1>
+    <div>
+        {% for photo in photos %}
+            <h2>{{ photo.title }}</h2>
+            <img src="{{ photo.image.url }}" alt="{{ photo.title }}">
+            <p>{{ photo.description }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
